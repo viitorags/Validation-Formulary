@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-area">
+            <h3>Crie sua conta</h3>
+            <form id="form">
+                <div class="input-box">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text">
+                    <span class="name input__message"></span>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <span class="email input__message"></span>
+                </div>
+                <div class="input-box">
+                    <label for="confirm-email">Confirme seu email:</label>
+                    <input type="email" name="confirm-email" id="confirm-email">
+                    <span class="confirm-email input__message"></span>
+                </div>
+                <div class="input-box">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password">
+                    <span class="password input__message"></span>
+                </div>
+                <div class="input-box">
+                    <label for="confirm-password">Confirme sua senha:</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                    <span class="confirm-password input__message"></span>
+                </div>
+                <button>Criar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/validation.js"></script>
+</body>
+
+</html>
