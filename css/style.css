@@ -65,16 +65,6 @@ input:focus {
     border-color: #4a90e2;
 }
 
-input.error {
-    border-color: #ff3333;
-    background-color: #fff2f2;
-}
-
-input.success {
-    border-color: #2ecc71;
-    background-color: #f0fff4;
-}
-
 .input__message {
     font-size: 12px;
     padding-left: 2px;
