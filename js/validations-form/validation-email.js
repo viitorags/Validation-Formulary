@@ -4,8 +4,7 @@ const validateEmail = (email) => {
 
     if (!email) {
         formItems.errorElement[1].classList.add('error');
-        formItems.errorElement[1].innerHTML = 'Email é necessário';
-        return false;
+        return formItems.errorElement[1].innerHTML = 'Email é necessário';
     } else {
         formItems.errorElement[1].classList.remove('error');
     }
@@ -13,8 +12,7 @@ const validateEmail = (email) => {
     const isValidEmail = /^\S+@\S+$/g;
     if (!isValidEmail.test(email)) {
         formItems.errorElement[1].classList.add('error');
-        formItems.errorElement[1].innerHTML = 'Por favor coloque um email válido';
-        return false;
+        return formItems.errorElement[1].innerHTML = 'Por favor coloque um email válido';
     }
 
     return '';
@@ -24,8 +22,7 @@ const validateEmail = (email) => {
 const verifyEmail = (email, confirmEmail) => {
     if (confirmEmail !== email) {
         formItems.errorElement[2].classList.add('error');
-        formItems.errorElement[2].innerHTML = 'Os emails não coincidem!';
-        return false;
+        return formItems.errorElement[2].innerHTML = 'Os emails não coincidem!';
     } else {
         formItems.errorElement[2].classList.remove('error');
     }

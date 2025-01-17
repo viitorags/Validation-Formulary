@@ -7,10 +7,12 @@ import { validatePassword, verifyPassword } from "./validations-form/validation-
 const handleSubmit = (e) => {
     e.preventDefault();
 
-    const isValid = validationForm();
+    validationForm();
 
-    if (isValid) {
-        window.location.href = './congrulations.html';
+    const hasError = document.querySelector('.input__message.error') !== null;
+
+    if (!hasError) {
+        window.location.href = './congratulations.html';
     }
 }
 

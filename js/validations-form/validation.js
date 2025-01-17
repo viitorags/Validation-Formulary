@@ -16,6 +16,12 @@ const validationForm = () => {
     const passwordValue = formItems.password.value.trim();
     const confirmPasswordValue = formItems.confirmPassword.value.trim();
 
+    validateUserName(userNameValue);
+    validatePassword(passwordValue, formItems.minlength);
+    validateEmail(emailValue);
+    verifyEmail(passwordValue, confirmPasswordValue);
+    verifyPassword(emailValue, confirmEmailValue);
+
     let isValid = true;
 
     isValid &= validateUserName(userNameValue);
